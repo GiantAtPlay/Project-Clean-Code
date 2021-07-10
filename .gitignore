@@ -1,0 +1,16 @@
+﻿/src/Infrastructure/Application.Email/bin/
+/src/Infrastructure/Application.Email/obj/
+/src/Infrastructure/Application.Hangfire/bin/
+/src/Infrastructure/Application.Hangfire/obj/
+/src/Infrastructure/Application.IoC/bin/
+/src/Infrastructure/Application.IoC/obj/
+/src/Core/Application.Core/bin/
+/src/Core/Application.Core/obj/
+/src/Core/Application.Domain/bin/
+/src/Core/Application.Domain/obj/
+/src/Persistence/Application.Data/bin/
+/src/Persistence/Application.Data/obj/
+/src/Persistence/Application.FileSystem/bin/
+/src/Persistence/Application.FileSystem/obj/
+/src/Presentation/Application.WWW/bin/
+/src/Presentation/Application.WWW/obj/
