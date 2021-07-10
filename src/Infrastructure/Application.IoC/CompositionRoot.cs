@@ -1,4 +1,5 @@
 ﻿using Application.Core;
+using Application.DatabaseUpdate;
 using Application.Domain;
 using Application.Domain.Emails;
 using Application.Email;
@@ -17,6 +18,10 @@ namespace Application.IoC
             serviceRegistry.RegisterSingleton<IBackgroundTaskService, BackgroundTaskService>();
             serviceRegistry.RegisterSingleton<IEmailService, EmailService>();
             serviceRegistry.RegisterSingleton<IApplicationClock, ApplicationClock>();
+            
+            // [DB]: Register database updater in IoC
+            serviceRegistry.RegisterSingleton<IDatabaseUpdater, DatabaseUpdater>();
+            
         }
     }
 }

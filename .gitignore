@@ -4,6 +4,8 @@
 /src/Infrastructure/Application.Hangfire/obj/
 /src/Infrastructure/Application.IoC/bin/
 /src/Infrastructure/Application.IoC/obj/
+/src/Infrastructure/Application.DatabaseUpdate/bin/
+/src/Infrastructure/Application.DatabaseUpdate/obj/
 /src/Core/Application.Core/bin/
 /src/Core/Application.Core/obj/
 /src/Core/Application.Domain/bin/

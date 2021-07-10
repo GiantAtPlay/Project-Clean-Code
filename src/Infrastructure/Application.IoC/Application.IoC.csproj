@@ -11,6 +11,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Core\Application.Core\Application.Core.csproj" />
       <ProjectReference Include="..\..\Core\Application.Domain\Application.Domain.csproj" />
+      <ProjectReference Include="..\Application.DatabaseUpdate\Application.DatabaseUpdate.csproj" />
       <ProjectReference Include="..\Application.Email\Application.Email.csproj" />
       <ProjectReference Include="..\Application.Hangfire\Application.Hangfire.csproj" />
     </ItemGroup>

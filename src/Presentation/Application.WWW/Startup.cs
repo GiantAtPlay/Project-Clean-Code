@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.IoC;
+using Application.WWW.Middleware;
 using Hangfire;
 using Hangfire.SqlServer;
 using Microsoft.AspNetCore.Builder;
@@ -93,6 +94,9 @@ namespace Application.WWW
             app.UseRouting();
 
             app.UseAuthorization();
+            
+            // [DB] : Register database update middleware so database gets updated on startup
+            app.UseDataBaseUpdater(Configuration.GetConnectionString("Default"));
 
             app.UseEndpoints(endpoints =>
             {

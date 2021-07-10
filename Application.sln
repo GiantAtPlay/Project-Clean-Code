@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Data", "src\Per
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.WWW", "src\Presentation\Application.WWW\Application.WWW.csproj", "{66AD491F-3AD2-4A6D-AEA4-08258C573099}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.DatabaseUpdate", "src\Infrastructure\Application.DatabaseUpdate\Application.DatabaseUpdate.csproj", "{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +62,10 @@ Global
 		{66AD491F-3AD2-4A6D-AEA4-08258C573099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66AD491F-3AD2-4A6D-AEA4-08258C573099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66AD491F-3AD2-4A6D-AEA4-08258C573099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6B862482-DD28-4D52-9663-7AA4821A6C47} = {5B70F5DD-4F37-473D-A7B8-05C53A0543FA}
@@ -69,5 +75,6 @@ Global
 		{2C30F25C-E2A0-4876-9467-DB7A688D6A48} = {67606ABC-2E3B-4685-AE89-1A578910B74C}
 		{42AEBE7A-9861-4001-9996-B234B013C9F7} = {8482A63A-4CC7-4E14-9486-7A2B4BB78232}
 		{460CF808-8BDC-4597-BC61-9BB7A397EE3C} = {8482A63A-4CC7-4E14-9486-7A2B4BB78232}
+		{3A79ED9D-69BE-468E-A63B-2A1CC006DFC1} = {8482A63A-4CC7-4E14-9486-7A2B4BB78232}
 	EndGlobalSection
 EndGlobal

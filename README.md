@@ -14,6 +14,7 @@ A starter solution for a dot net application based on the Onion architecture
 - [Miniprofiler](docs/Features/MiniProfiler.md)
 - [Basic Security headers & Settings](docs/Features/BasicSecurity.md)
 - [Emails \w Example](docs/Features/Emails.md) (IN PROGRESS)
+- [Database Migrations \w DbUp](docs/Features/DatabaseMigrations.md)
 - Identity
 - Single Sign On
 - Caching
