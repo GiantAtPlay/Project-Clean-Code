@@ -1,0 +1,12 @@
+﻿@model IList<Application.Domain.Movies.IMovie>
+
+@{
+    ViewData["Title"] = "Movies";
+}
+
+@foreach (var movie in Model)
+{
+    <div>
+        <h2>@movie.Title</h2>
+    </div>
+}

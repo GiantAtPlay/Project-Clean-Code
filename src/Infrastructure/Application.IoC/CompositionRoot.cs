@@ -1,10 +1,15 @@
 ﻿using Application.Core;
+using Application.Data;
+using Application.Data.Movies;
 using Application.DatabaseUpdate;
 using Application.Domain;
+using Application.Domain.Data;
 using Application.Domain.Emails;
+using Application.Domain.Movies;
 using Application.Email;
 using Application.Hangfire;
 using LightInject;
+using Microsoft.Extensions.Configuration;
 
 namespace Application.IoC
 {
@@ -22,6 +27,8 @@ namespace Application.IoC
             // [DB]: Register database updater in IoC
             serviceRegistry.RegisterSingleton<IDatabaseUpdater, DatabaseUpdater>();
             
+            // [DATA]: Register data repositories
+            serviceRegistry.Register(typeof(IRepository<IMovie>), typeof(MovieRepository));
         }
     }
 }

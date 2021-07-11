@@ -6,6 +6,7 @@ using Application.IoC;
 using Application.WWW.Middleware;
 using Hangfire;
 using Hangfire.SqlServer;
+using LightInject;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.CookiePolicy;
 using Microsoft.AspNetCore.Hosting;
@@ -16,6 +17,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using StackExchange.Profiling;
+using LogLevel = Microsoft.Extensions.Logging.LogLevel;
 
 namespace Application.WWW
 {
@@ -96,6 +98,7 @@ namespace Application.WWW
             app.UseAuthorization();
             
             // [DB] : Register database update middleware so database gets updated on startup
+            // TODO: Only needs to be called once on startup, not on every request.
             app.UseDataBaseUpdater(Configuration.GetConnectionString("Default"));
 
             app.UseEndpoints(endpoints =>
