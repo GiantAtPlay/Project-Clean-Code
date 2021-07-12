@@ -76,6 +76,7 @@ root
 |   |       Application.Core
 |   |
 |   |---Infrastructure
+|   |       Application.DatabaseUpdate
 |   |       Application.Email
 |   |       Application.Hangfire
 |   |       Application.IoC
